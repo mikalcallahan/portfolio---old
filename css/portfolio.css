@@ -1,0 +1,45 @@
+/* CSS for index.html */
+/*@import "bootstrap-sass/bootstrap";*/
+/*css for entire body*/
+body {
+  margin: 0;
+  width: 100%; }
+
+/* css for header */
+header {
+  /*background: hsl(290,60%,80%);
+  color: inherit;*/
+  margin: 0; }
+
+/* css for nav items */
+nav ul li {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+/* css for more nav items */
+nav ul li a {
+  background-color: inherit;
+  color: black;
+  display: inline; }
+
+.navbar-default {
+  background-color: #e0adeb;
+  border-color: #e0adeb;
+  width: 100%; }
+
+.navbar-toggle {
+  background-color: green; }
+
+.description {
+  display: table;
+  float: none;
+  margin: auto;
+  text-align: center;
+  width: auto; }
+
+footer {
+  bottom: 0;
+  position: absolute;
+  text-align: right; }
+
+/*# sourceMappingURL=portfolio.css.map */
