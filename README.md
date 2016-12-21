@@ -1,2 +1,2 @@
 # Portfolio
-src for my profession portfolio
+src for my professional portfolio
