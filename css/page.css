@@ -1,0 +1,35 @@
+body {
+  background-color: #F7F9F9;
+  width: 100%; }
+
+hr {
+  background-color: white;
+  border-color: white;
+  color: white;
+  height: .5rem; }
+  hr.oddhr {
+    -webkit-transform: rotate(4deg);
+    /* Safari */
+    transform: rotate(4deg); }
+  hr.evenhr {
+    -webkit-transform: rotate(-4deg);
+    /* Safari */
+    transform: rotate(-4deg); }
+
+blockquote {
+  border-left: 0.3rem solid #d1d1d1;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1rem 1.5rem;
+  text-align: center; }
+
+/*
+blockquote *:last-child {
+  margin-bottom: 0;
+}*/
+/*
+.quote{
+	border-left: 0.3rem solid #d1d1d1;
+}*/
+
+/*# sourceMappingURL=page.css.map */

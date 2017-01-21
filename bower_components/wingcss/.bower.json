@@ -1,0 +1,37 @@
+{
+  "name": "wingcss",
+  "description": "A lightweight, responsive CSS Framework",
+  "main": "dist/wing.min.css",
+  "authors": [
+    "Kabir Shah"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "wing",
+    "css",
+    "framework",
+    "responsive",
+    "css",
+    "framework",
+    "responsive",
+    "lightweight"
+  ],
+  "homepage": "http://usewing.ml",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "0.1.9",
+  "_release": "0.1.9",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.9",
+    "commit": "609cc58b1ea9e693aa9b6cc20def4168c622b138"
+  },
+  "_source": "https://github.com/KingPixil/wing.git",
+  "_target": "^0.1.9",
+  "_originalSource": "wingcss",
+  "_direct": true
+}
