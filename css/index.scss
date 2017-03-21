@@ -3,6 +3,7 @@ $backgroundcolor: #F7F9F9;
 
 .construction{
 	color: red;
+	text-align: center;
 }
 
 .odddiv{
@@ -19,7 +20,7 @@ $backgroundcolor: #F7F9F9;
 	background-color: $backgroundcolor;
     color: black;
     display: block;
-	height: 70vh;
+	//height: 70%;
 //	padding-top: 2%;
     text-align: center;
 	//width: 100%;
@@ -40,6 +41,7 @@ $backgroundcolor: #F7F9F9;
 	border-bottom: 1px solid black;
 	border-top: 1px solid black;
 	color:black;
+	text-align: center;
 	//padding-bottom: 2%;
 	//-webkit-transform: rotate(4deg); /* Safari */
 	//transform: rotate(4deg);
@@ -47,9 +49,10 @@ $backgroundcolor: #F7F9F9;
 
 .personal{
 	color: black;
+	text-align: center;
 }
 
-.content{
+.rotatecontent{
 	-webkit-transform: skewY(-4deg); /* Safari */
 	transform: skewY(-4deg);
 }

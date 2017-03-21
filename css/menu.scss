@@ -5,21 +5,24 @@
 	position: fixed;
 	text-align: center;
 	//padding-right: 2%;
-	z-index: 9999;
+	z-index: 10;
 }
 
 #toggleicon{
-	transition: all 1.5s ease-in-out;
-	-webkit-transition: all 1.5s ease-in-out;
+	transition: all .35s ease;
+	-webkit-transition: all .35s ease;
 }
 
 .fa-genderless{
-	color: #826B99;
+	color: black;
  	&.open{
-		color: black;
+		color: #826B99;
+	}
+	&:hover{
+		color: #826B99;
 	}
 }
-
+/*
 .fa fa-circle{
 	background-color: inherit;
 	color: black;
@@ -29,24 +32,50 @@
 	background-color: inherit;
 	color: black;
 }
-
+*/
 #menu {
 	align-items: center;
-	display: flex;
+	//background: rgba(0, 0, 0, 0.5);
+	background-color: #171717;
 	color: white;
-    position: fixed;
+	display: inline-flex;
+	height: 0%;
 	justify-content: center;
-    width:100%;
-    background: rgba(0, 0, 0, 0.5);
+	//padding-right: 10%;
+    position: fixed;
+	//overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	transition: 0.5s;
+	transition-timing-function: ease;
+
+	//-webkit-transform: skewY(-4deg); /* Safari */
+	//transform: skewY(-4deg);
+	//transition-duration: 0.5s;
+
+	font-size: 4rem;
+	text-align: center;
 	visibility: hidden;
-	overflow: hidden;
+	top: 0;
+   left: 0;
+
+	width:100%;
+	z-index: 5;
 
 	&.open {
-    //opacity: .9;
+    opacity: .95;
 	//opacity: 10;
     visibility: visible;
     height: 100%;
-	z-index: 9998;
+	//transition: all .35s ease;
+   	//-webkit-transition: all .35s ease;
+	//transition-duration: 0.5s;
+	//transition: 5s;
+	/*
+	transition: all 1.5s ease-in-out;
+	-webkit-transition: all 1.5s ease-in-out;*/
+
+	width: inherit;
 	}
 	li{
 	//	top: 50vh;
@@ -55,3 +84,12 @@
 		color: white;
 	}
 }
+
+/*
+#toggle{
+	background-color: inherit;
+	border: none;
+	outline: none;
+	//z-index: ;
+	}
+*/

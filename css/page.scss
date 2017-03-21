@@ -1,13 +1,16 @@
 $backgroundcolor: #F7F9F9;
 // #F7F9F9
 body{
-	//background-color: green;
 	background-color: $backgroundcolor;
-	//overflow: hidden;
+	height: 100%;
+	margin: 0;
+	overflow-x: hidden;
+	//overflow-y: hidden;
+	padding: 0;
 	width: 100%;
 	//z-index: -1;
 }
-
+/*
 hr{
 	background-color: white;
 	border-color: white;
@@ -15,21 +18,27 @@ hr{
 	height: .5rem;
 	//z-index: 0;
 	&.oddhr{
-		-webkit-transform: rotate(4deg); /* Safari */
+		-webkit-transform: rotate(4deg); /* Safari
 	    transform: rotate(4deg);
 	}
 	&.evenhr{
-		-webkit-transform: rotate(-4deg); /* Safari */
+		-webkit-transform: rotate(-4deg); /* Safari
 		transform: rotate(-4deg);
 	}
 }
-
+*/
+/*
 blockquote {
-  border-left: 0.3rem solid #d1d1d1;
+	float: right;
+  //border-left: 0.3rem solid #d1d1d1;
   margin-left: 0;
   margin-right: 0;
   padding: 1rem 1.5rem;
   text-align: center;
+}*/
+blockquote{
+	border: none;
+//	line-height: 5;
 }
 /*
 blockquote *:last-child {
@@ -38,4 +47,5 @@ blockquote *:last-child {
 /*
 .quote{
 	border-left: 0.3rem solid #d1d1d1;
-}*/
+}
+*/

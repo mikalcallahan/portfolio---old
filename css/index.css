@@ -1,5 +1,6 @@
 .construction {
-  color: red; }
+  color: red;
+  text-align: center; }
 
 .evendiv {
   -webkit-transform: skewY(4deg);
@@ -11,7 +12,6 @@
   background-color: #F7F9F9;
   color: black;
   display: block;
-  height: 70vh;
   text-align: center; }
 
 .skills ul li {
@@ -25,12 +25,14 @@
   background-color: #F2EFF1;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
-  color: black; }
+  color: black;
+  text-align: center; }
 
 .personal {
-  color: black; }
+  color: black;
+  text-align: center; }
 
-.content {
+.rotatecontent {
   -webkit-transform: skewY(-4deg);
   /* Safari */
   transform: skewY(-4deg); }
