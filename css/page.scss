@@ -1,51 +1,18 @@
-$backgroundcolor: #F7F9F9;
-// #F7F9F9
+$backgroundcolor: #FCFDFD;
+$textcolor: #323435;
 body{
 	background-color: $backgroundcolor;
+	color: $textcolor;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	height: 100%;
 	margin: 0;
-	overflow-x: hidden;
-	//overflow-y: hidden;
-	padding: 0;
+	//overflow-x: hidden;
+	//overflow-y: scroll;
 	width: 100%;
+	z-index: 0;
 	//z-index: -1;
 }
-/*
-hr{
-	background-color: white;
-	border-color: white;
-	color: white;// changeing
-	height: .5rem;
-	//z-index: 0;
-	&.oddhr{
-		-webkit-transform: rotate(4deg); /* Safari
-	    transform: rotate(4deg);
-	}
-	&.evenhr{
-		-webkit-transform: rotate(-4deg); /* Safari
-		transform: rotate(-4deg);
-	}
-}
-*/
-/*
-blockquote {
-	float: right;
-  //border-left: 0.3rem solid #d1d1d1;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 1rem 1.5rem;
-  text-align: center;
-}*/
+
 blockquote{
 	border: none;
-//	line-height: 5;
 }
-/*
-blockquote *:last-child {
-  margin-bottom: 0;
-}*/
-/*
-.quote{
-	border-left: 0.3rem solid #d1d1d1;
-}
-*/

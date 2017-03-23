@@ -1,4 +1,4 @@
-$backgroundcolor: #F7F9F9;
+$backgroundcolor: #FCFDFD;
 //#F7F9F9;
 
 .construction{
@@ -6,53 +6,141 @@ $backgroundcolor: #F7F9F9;
 	text-align: center;
 }
 
-.odddiv{
-
-}
-
-.evendiv{
-	-webkit-transform: skewY(4deg); /* Safari */
-	transform: skewY(4deg);
-	width: 100%;
-}
-
-.intro {
+#intro {
 	background-color: $backgroundcolor;
-    color: black;
-    display: block;
-	//height: 70%;
-//	padding-top: 2%;
-    text-align: center;
-	//width: 100%;
+	border-color: #323435;
+	border-style: solid;
+	border-right: none;
+	//border-right: none;
+	border-width: medium;
+	display: block;
+    //color: #323435;
+	margin-top: 3%;
+	/*margin-left: 2%;*/
+	//overflow-x: hidden;
+	//min-width: 1000px;
+	//overflow-x: hidden;
+	//padding-left: 5%;
+	width: 100%;
+	z-index: 1;
+
+	h1{
+		font-size: 2.6rem;
+		font-weight: bolder;
+		padding-bottom: 1.2%;
+		padding-left: 5%;
+		padding-top: 1.5%;
+	}
+
+	h3{
+		font-size: 2rem;
+		padding-left: 2.5%;
+	}
+	h4{
+		font-size: 1.6rem;
+		padding-bottom: 1.4%;
+		padding-left: 2.5%;
+		//padding-left: 3%;
+	}
+	.quote{
+		font-size: 1.2rem;
+		font-style: italic;
+		padding-bottom: 1.2%;
+		padding-left: 2.5%;
+	}
+
+	@media screen and (min-width: 520px) {
+		h3{
+			padding-left: 20%;
+		}
+		h4{
+			padding-left: 15%;
+		}
+		p{
+			padding-left: 35%;
+		}
+		.quote{
+			text-align: center;
+		}
+	}
 }
 
+#projects{
+	background-color: $backgroundcolor;
+	border-color: #323435;
+	border-style: solid;
+	border-width: medium;
+//	color: #323435;
+	margin-left: 8%;
+	margin-top: 3%;
+	padding-bottom: 5%;
+	width: 80%;
+	z-index: 2;
 
+	h3{
+		font-size: 1.6rem;
+		font-weight: bold;
+		margin-left: 3%;
+		text-decoration: underline;
+	}
 
-.skills ul li{
-	display: inline;
-	list-style-type: none;
-	font-size: 2.4rem;
-    line-height: 1.35;
-    letter-spacing: -.08rem;
+	.content li{
+		align-items: center;
+		display: flex;
+		margin-left: 3%;
+		margin-top: 2%;
+	}
+
 }
 
-.portfolio{
-	background-color: #F2EFF1;
-	border-bottom: 1px solid black;
-	border-top: 1px solid black;
-	color:black;
-	text-align: center;
-	//padding-bottom: 2%;
-	//-webkit-transform: rotate(4deg); /* Safari */
-	//transform: rotate(4deg);
+#beerhopper-screen{
+/*	-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);*/
+	height: 45%;
+	margin-left: 10%;
+	width: 50%;
 }
 
-.personal{
-	color: black;
-	text-align: center;
+#hgb-screen{
+/*	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);*/
+	height: 45%;
+	margin-left: 10%;
+	width: 50%;
 }
 
-.rotatecontent{
-	-webkit-transform: skewY(-4deg); /* Safari */
-	transform: skewY(-4deg);
+#personal{
+	background-color: $backgroundcolor;
+	border-color: #323435;
+	border-style: solid;
+	border-width: medium;
+//	line-height:
+	margin-bottom: 2%;
+	margin-left: 5%;
+	margin-top: -2.5%;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	width: 90%;
+	z-index: 1;
+
+	h3{
+		font-size: 1.6rem;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	#about-me{
+		//margin: 151px 106px 270px 62px;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	#about-me ul li{
+		margin-bottom: .5%;
+		margin-top: .5%;
+	}
 }
