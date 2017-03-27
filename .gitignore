@@ -1,3 +1,6 @@
 ## git ignore:
 .remote-sync.json
 *.DS_Store
+.DS_Store
+*.sketch
+/files
