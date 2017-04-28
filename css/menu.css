@@ -6,29 +6,21 @@
   text-align: center;
   visibility: visible;
   z-index: 10; }
+  @media screen and (min-width: 760px) {
+    #toggle {
+      visibility: hidden; } }
 
 #toggleicon {
   transition: all .35s ease;
   -webkit-transition: all .35s ease; }
 
 .fa-genderless {
-  color: black; }
+  color: #171717; }
   .fa-genderless.open {
     color: #C1A6FF; }
   .fa-genderless:hover {
     color: #C1A6FF; }
 
-/*
-.fa fa-circle{
-	background-color: inherit;
-	color: black;
-}
-
-.fa fa-circle-o{
-	background-color: inherit;
-	color: black;
-}
-*/
 #menu {
   align-items: center;
   background-color: #171717;
@@ -39,28 +31,77 @@
   position: fixed;
   overflow-x: hidden;
   overflow-y: hidden;
-  transition: 0.5s;
+  transition: 0.55s;
+  transition-delay: .08s;
   transition-timing-function: ease;
   font-size: 4rem;
   text-align: center;
-  visibility: hidden;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 5; }
   #menu.open {
     opacity: .95;
-    visibility: visible;
     height: 100%;
-    /*
-    transition: all 1.5s ease-in-out;
-    -webkit-transition: all 1.5s ease-in-out;*/
+    visibility: visible;
     width: inherit; }
-  #menu li {
-    list-style-type: none;
-    color: white; }
 
-#menuitems ul li a:hover {
+#menuitems ul li a {
+  background-color: inherit;
+  color: #C1A6FF;
+  display: inline-block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center; }
+
+#nav {
+  margin-top: 15%;
+  opacity: 0.9;
+  position: fixed;
+  visibility: hidden;
+  width: 10%;
+  z-index: 999999; }
+
+#navitems {
+  background-color: #FCFDFD;
+  /*border-color: #171717;
+  border-style: solid;
+  border-width: thin;
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);*/
+  margin-top: 10%;
+  opacity: 1.0; }
+  @media screen and (min-width: 760px) {
+    #navitems {
+      visibility: visible; } }
+
+#navitems ul {
+  margin-left: 12%; }
+
+#navitems ul li a {
+  color: #323435;
+  display: inline-block;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center; }
+
+#navitems ul li a:hover {
+  background-color: inherit;
   color: #C1A6FF; }
+
+#navitems ul li a:after {
+  border-bottom: 2px solid #C1A6FF;
+  content: '';
+  display: block;
+  margin-top: 1.7%;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  width: 0; }
+
+#menuitems ul li a:hover:after {
+  width: 100%; }
 
 /*# sourceMappingURL=menu.css.map */

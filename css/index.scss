@@ -1,49 +1,103 @@
 $backgroundcolor: #FCFDFD;
-//#F7F9F9;
+	//#F7F9F9;
 
 .construction{
 	color: red;
 	text-align: center;
 }
 
-#intro {
-	background-color: $backgroundcolor;
+.border{
+	align-items: center;
 	border-color: #323435;
 	border-style: solid;
 	border-right: none;
-	//border-right: none;
+	border-top: none;
+	border-left: none;
 	border-width: medium;
-	display: block;
-    //color: #323435;
-	margin-top: 3%;
-	/*margin-left: 2%;*/
-	//overflow-x: hidden;
+	display: flex;
+	padding-bottom: 5%;
+	width: 100%;
+}
+
+#logo{
+	align-items: center;
+	justify-content: flex-end;
+	display: flex;
+
+	#logo-img{
+		height: 35%;
+		margin-right: 20%;
+		margin-top: 0%;
+		width: 35%;
+	}
+
+	@media screen and (min-width: 760px) {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+u:before, u:after {
+    content: "\00a0\00a0\00a0\00a0";
+}
+
+#intro {
+	align-items: center;
+	background-color: $backgroundcolor;
+	//background-color: #D9D2B6;
+	display: flex;
+   //color: #323435;
+	//margin-top: 3%;
+	//margin-top: -2%;
+	//margin-bottom: 5%;
+	margin-left: 5%;
+	margin-top: 8%;
+	overflow-x: hidden;
 	//min-width: 1000px;
 	//overflow-x: hidden;
-	//padding-left: 5%;
+	padding-bottom: 5%;
+	padding-left: 5%;
 	width: 100%;
 	z-index: 1;
 
+	hr{
+		border-color: #323435;
+		padding-right: 20%;
+		margin-left: -15%;
+		margin-right: 20%;
+		overflow-x: hidden;
+		width: 300%;
+	}
+
+	#content{
+
+	}
+
 	h1{
-		font-size: 2.6rem;
+		//font-size: 2.6rem;
+		font-size: 2.8rem;
 		font-weight: bolder;
 		padding-bottom: 1.2%;
 		padding-left: 5%;
 		padding-top: 1.5%;
+		text-transform: lowercase;
 	}
 
 	h3{
-		font-size: 2rem;
+		//font-size: 2rem;
+		font-size: 2.4rem;
 		padding-left: 2.5%;
 	}
 	h4{
-		font-size: 1.6rem;
+		font-size: 2rem;
+		//font-size: 1.6rem;
 		padding-bottom: 1.4%;
 		padding-left: 2.5%;
 		//padding-left: 3%;
 	}
-	.quote{
-		font-size: 1.2rem;
+	#quote{
+		//font-size: 1.2rem;
+		font-size: 1.4rem;
 		font-style: italic;
 		padding-bottom: 1.2%;
 		padding-left: 2.5%;
@@ -70,30 +124,56 @@ $backgroundcolor: #FCFDFD;
 	border-color: #323435;
 	border-style: solid;
 	border-width: medium;
-	margin-left: 8%;
+	//margin-left: 8%;
+	margin-left: 15%;
 	margin-top: 3%;
 	padding-bottom: 7%;
 	width: 80%;
 
 	h3{
-		font-size: 1.6rem;
+		//font-size: 1.6rem;
+		font-size: 2.4rem;
 		font-weight: bold;
 		margin-left: 3%;
-		text-decoration: underline;
+		//text-decoration: underline;
 	}
 
 	.content li{
-		align-items: center;
-		display: flex;
-		margin-left: 3%;
+		//align-items: center;
+		//display: flex;
+		display: block;
+		margin-left: 5%;
 		margin-top: 2%;
-		margin-bottom: 1%;
+		margin-bottom: 3%;
 	}
 
 	.content li p{
 		font-weight: bold;
+		font-size: 1.4rem;
+		margin-bottom: 2%;
 	}
 
+	.content li a:hover{
+		opacity: .75;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	#projects{
+		margin-left: 2%;
+		width: 100%;
+		.content ul li{
+			display: block;
+		}
+	}
+}
+
+@media screen and (max-width: 350px) {
+	#projects{
+		margin-left: 12%;
+		width: 90%;
+	}
 }
 
 #beerhopper-screen{
@@ -123,28 +203,77 @@ $backgroundcolor: #FCFDFD;
 	margin-bottom: 2%;
 	margin-left: 5%;
 	margin-top: -4%;
-	padding-bottom: 5%;
+	//padding-bottom: 5%;
 	padding-top: 5%;
-	width: 90%;
+	width: 80%;
 	z-index: 1;
 
 	h3{
-		font-size: 1.6rem;
+		//font-size: 1.6rem;
+		font-size: 2.4rem;
 		font-weight: bold;
 		padding-left: 2%;
-		text-decoration: underline;
+	}
+
+	#personal-header{
+		margin-left: 12%;
 	}
 
 	#about-me{
-		//margin: 151px 106px 270px 62px;
-		margin-left: 10%;
+		//margin-left: 3%;
+		margin-left: 12%;
 		margin-right: 10%;
-		font-size: 1.2rem;
+		//font-size: 1.2rem;
+		font-size: 1.4rem;
 		font-weight: bold;
 	}
 
 	#about-me ul li{
 		margin-bottom: .5%;
 		margin-top: .5%;
+	}
+
+	#social-links{
+		font-weight: bold;
+		margin-top: 5%;
+		margin-bottom: 2%;
+		padding-left: 2%;
+	}
+
+	#social-links ul li a{
+		display: inline-block;
+		text-decoration: none;
+	}
+
+	#social-links ul li a:hover{
+		background-color: inherit;
+		color: #323435;
+	}
+
+	#social-links ul li a:after{
+		border-bottom: 2px solid #323435;
+		content: '';
+		display: block;
+		margin-top: 1.7%;
+		transition: 0.5s ease;
+		-webkit-transition: 0.5s ease;
+		width: 0;
+	}
+
+	#social-links ul li a:hover:after{
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	#personal{
+		width: 90%;
+	}
+}
+
+@media screen and (min-width: 546px) {
+	#about-me{
+		font-size: 2rem;
 	}
 }

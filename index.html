@@ -23,11 +23,21 @@
 		<div id="menuitems">
 			<!-- 	list for nav items -->
 			<ul>
-				<li><a href="#intro">mikal callahan</a></li>
-				<li><a href="#projects">projects</a></li>
-				<li><a href="#personal">personal</a></li>
-				<li><a href="html/contact.html">contact</a></li>
-				<li><a href="https://www.github.com/mikalcallahan">github</a></li>
+				<li>
+					<a href="#intro">mikal callahan</a>
+				</li>
+				<li>
+					<a href="#projects">projects</a>
+				</li>
+				<li>
+					<a href="#personal">personal</a>
+				</li>
+				<li>
+					<a href="html/contact.html">contact</a>
+				</li>
+				<li>
+					<a href="https://www.github.com/mikalcallahan">github</a>
+				</li>
 			</ul>
 			<!-- 	end list -->
 		</div>
@@ -42,38 +52,72 @@
 	</button>
 	<!-- end button -->
 
+	<div id="home"></div>
+
+	<div class="container">
+		<div id="nav">
+			<div id="navitems">
+				<!-- 	list for nav items -->
+				<ul>
+					<li>
+						<a href="#home"> <i class="fa fa-home" aria-hidden="true"></i> home</a>
+					</li>
+					<li>
+						<a href="#projects"><i class="fa fa-code" aria-hidden="true"></i> projects</a>
+					</li>
+					<li>
+						<a href="#personal"><i class="fa fa-headphones" aria-hidden="true"></i> personal</a>
+					</li>
+					<li>
+						<a href="mailto:mikal.callahan@icloud.com/?subject='Hello'"><i class="fa fa-envelope" aria-hidden="true"></i> contact</a>
+					</li>
+					<li>
+						<a href="https://www.github.com/mikalcallahan"> <i class="fa fa-github-square" aria-hidden="true"></i> github</a>
+					</li>
+				</ul>
+				<!-- 	end list -->
+			</div>
+			<!-- 	end menu items -->
+		</div>
+	</div>
+
 	<!-- page container -->
 	<div class="container">
 		<!-- 	row zero "under contruction"
 	 			delete when finished	-->
-		<div class="row">
-			<!-- first column -->
-			<div class="column">
-				<h1 class="construction">UNDER CONSTRUCTION</h1>
-			</div>
-		</div>
+	</div>
 
+	<div class="container">
 		<!-- row one, intro -->
 		<div class="row">
-			<!-- column begin -->
-			<div class="column">
+			<div class="border">
 				<!-- div class intro -->
 				<div id="intro" class="intro">
-					<!-- div class content -->
-					<div class="content">
-						<h1>Mikal Callahan</h1>
-						<h3> ui / ux designer and developer </h3>
-						<h4>responsive front-end, intellegent back-end</h4>
-						<p class="quote"><em>“the marriage of design and function”</em></p>
+					<!-- column begin -->
+					<div class="column">
+						<!-- div class content -->
+						<!--<hr>-->
+						<div class="content">
+							<h1>Mikal Callahan</h1>
+							<h3> ui / ux designer and developer </h3>
+							<h4>responsive front-end, intellegent back-end</h4>
+							<p id="quote"><em>“the marriage of design and function”</em></p>
+						</div>
+						<!--<hr>-->
+						<!-- end content -->
 					</div>
-					<!-- end content -->
+					<div id="logo">
+						<img id="logo-img" src="img/logo.png" alt="brand logo">
+					</div>
+					<!-- end intro -->
 				</div>
-				<!-- end intro -->
+				<!-- end column -->
 			</div>
-			<!-- end column -->
+			<!-- end row, intro -->
 		</div>
-		<!-- end row, intro -->
+	</div>
 
+	<div class="container">
 		<!-- second row, projects -->
 		<div class="row">
 			<!-- column -->
@@ -82,14 +126,14 @@
 				<div id="projects" class="projects">
 					<!-- div class content -->
 					<div class="content">
-						<h3>projects</h3>
+						<h3><u>projects</u></h3>
 						<!-- list of projects -->
 						<ul>
 							<li>
 								<p>
 									beerhopper
 								</p>
-								<a href="#">
+								<a href="http://beerhopper.me">
 									<img id="beerhopper-screen" src="img/beerhopper.png" alt="beerhopper-screen">
 								</a>
 							</li>
@@ -97,13 +141,12 @@
 								<p>
 									heavenly gift baskets
 								</p>
-								<a href="#">
-									<img id="hgb-screen" src="img/hgb.png" alt="hgb-screen">
-								</a>
+								<a href="#hgb-screen">
+									<img id="hgb-screen" src="img/hgb.png" alt="hgb-screen"> i </a>
 							</li>
 							<li>
 								<p>
-									more to come...
+									more to come ... ...
 								</p>
 							</li>
 						</ul>
@@ -129,26 +172,43 @@
 			<div id="personal" class="personal">
 				<!-- div class content -->
 				<div class="content">
-					<h3>personal</h3>
+					<h3 id="personal-header"><u>personal</u></h3>
 					<!-- about-me list -->
 					<ul id="about-me">
 						<li>
 							<p>
-								i am a ui &amp; ux designer and developer, soon to have a degree in computer science from california state university, san marcos
+								i am a ui &amp; ux designer and developer, soon to have a degree in computer science from california state university, san marcos.
 							</p>
 						</li>
 						<li>
 							<p>
-								currently located in san diego, ca
+								i am currently located in san diego, ca.
 							</p>
 						</li>
 						<li>
 							<p>
-								i am passionate about well documented, creative code; the environment; creating and discovering music; and people.
+								i am passionate about well documented, creative code; the environment, creating and discovering music, all have my heart.
 							</p>
 						</li>
 					</ul>
 					<!-- end about-me list -->
+					<div id="social-links">
+						<ul>
+							<li>
+								<a href="https://www.github.com/mikalcallahan">github</a>
+							</li>
+							<li>
+								<a href="mailto:mikal.callahan@icloud.com/?subject='hello'">email</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/mikalcallahan/">instagram</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/mikalcallahan">twitter</a>
+							</li>
+						</ul>
+					</div>
+					<!-- end social-links -->
 				</div>
 				<!-- end content -->
 			</div>

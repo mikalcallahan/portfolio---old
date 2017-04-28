@@ -1,13 +1,17 @@
 body {
-  background-color: #FCFDFD;
-  color: #323435;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  height: 100%;
-  margin: 0;
-  width: 100%;
-  z-index: 0; }
+   background-color: #FCFDFD;
+   color: #323435;
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   height: 100%;
+   margin: 0;
+   overflow-x: hidden;
+   width: 100%;
+   z-index: 0;
+}
 
 blockquote {
-  border: none; }
+   border: none;
+}
+
 
 /*# sourceMappingURL=page.css.map */
